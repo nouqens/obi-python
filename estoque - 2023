@@ -1,0 +1,9 @@
+tipo, tamanho = int(input()), int(input())
+m = []
+for y in range(tipo):
+    coluna = int(input())
+    m.append(coluna)
+    for x in range(tamanho):
+        linha = int(input())
+        m.append(linha)
+print(m)
