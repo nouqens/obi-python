@@ -1,0 +1,23 @@
+n = int(input())
+l= list(map(int,input().split()))
+
+i = 0
+f = n-1
+contador = 0
+
+while i < f:
+    if l[i] == l[f]:
+        i+=1
+        f-=1
+        
+    elif l[i] < l[f]:
+        l[i+1] += l[i]
+        i+=1
+        contador+=1
+        
+    else:
+        l[f-1] += l[f]
+        f-=1
+        contador+=1
+
+print(contador)
