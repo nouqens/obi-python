@@ -1,0 +1,8 @@
+n, k = list(map(int, input().split()))
+cand = sorted(list(map(int, input().split())))
+aprv = 0
+for _ in range(k):
+    aprv = max(cand)
+    cand.pop()
+
+print(aprv)
