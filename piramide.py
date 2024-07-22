@@ -1,0 +1,21 @@
+n = int(input())
+torre = [[1 for _ in range(n)] for _ in range(n)]
+
+c = 0
+ok = True
+
+while ok:
+    ok = False
+    for i in range(n):
+        if i <= c or i >= (n - (c+1)):
+            continue
+        else:
+            for j in range(n):
+                if j <=c or j >= (n - (c + 1)):
+                    continue
+                else:
+                    torre[i][j] +=1
+                    ok = True
+    c+=1
+for i in torre:
+    print(' '.join([str(y) for y in i]))

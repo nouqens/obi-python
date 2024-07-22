@@ -1,0 +1,10 @@
+c, d, t = int(input()), int(input()), int(input())
+qnt = 0
+if c*t > d:
+    print(0.0)
+else:
+    if t != 0:
+        qnt = (d/c)-t
+    else:
+        qnt = d/c
+    print(round(qnt, 1))
